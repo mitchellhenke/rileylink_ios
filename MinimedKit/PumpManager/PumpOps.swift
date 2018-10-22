@@ -69,7 +69,7 @@ public class PumpOps {
         sessionQueue.async {
             let semaphore = DispatchSemaphore(value: 0)
 
-            device.runSession(withName: name) { (session) in
+            device.runSession(withName: name) { [unowned self] (session) in
                 let session = PumpOpsSession(settings: self.pumpSettings, pumpState: self.pumpState, session: session, delegate: self)
                 self.sessionDevice = device
                 self.configureDevice(device, with: session)
