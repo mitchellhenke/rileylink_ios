@@ -1,2 +1,2 @@
-github "LoopKit/LoopKit" "dev"
+github "mitchellhenke/LoopKit" "mitchell-rsilvers129-fpu-v2"
 github "maxkonovalov/MKRingProgressView" ~> 2.2
